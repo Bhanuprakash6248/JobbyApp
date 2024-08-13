@@ -1,111 +1,120 @@
-.LogoutButton {
-  background-color: #6366f1;
-  border: 0px;
-  height: 24px;
-  width: 88px;
-  font-weight: 600;
-  color: #ffffff;
-  border-radius: 4px;
-  margin-right: 33px;
-  cursor: pointer;
-}
-.BgForHeader {
+.navbar {
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #272727;
+}
+
+.nav-container {
+  width: 91%;
+  margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-}
-.HomeAndJobs {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 110px;
 }
-.webSiteLogo {
-  height: 33px;
-  margin-left: 33px;
+
+.home-website-logo {
+  width: 115px;
 }
-.HomeAndJobsStyle {
-  font-size: 18px;
+
+.nav-items {
+  display: flex;
+  align-items: center;
   list-style-type: none;
+  padding-left: 0;
+  gap: 26px;
+}
+
+.nav-link-lg {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 550;
   text-decoration: none;
   color: #ffffff;
 }
-.liWebSiteLogo {
-  list-style-type: none;
+
+.nav-link-sm {
   text-decoration: none;
-}
-.HJ {
-  text-decoration: none;
+  color: #ffffff;
 }
 
-@media (min-width: 768px) {
-  .HomeAndJobsSmallScreens {
+.small-header-icons {
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+  margin-left: 16px;
+}
+
+.logout-button-lg {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 550;
+  cursor: pointer;
+  outline: none;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 21px;
+  color: #f8fafc;
+}
+
+.logout-button-sm {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 5px;
+}
+
+.logout-icon-sm {
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-items {
+    margin-left: auto;
+  }
+
+  .nav-link-lg {
     display: none;
   }
-  .forSmallScreensLogout {
+
+  .logout-button-lg {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
-  .HomeAndJobs {
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .home-website-logo {
+    width: 132px;
+  }
+
+  .nav-items {
+    gap: 31px;
+  }
+
+  .small-header-icons {
     display: none;
   }
-  .ForLargeScreensLogout {
+
+  .logout-button-lg {
+    font-size: 15px;
+    padding: 5px 23px;
+  }
+
+  .logout-btn-list-item-small {
     display: none;
   }
-  .HomeAndJobsStyleSmallScreens {
-    list-style-type: none;
-    color: #ffffff;
-  }
-  .HomeAndJobsSmallScreens {
-    display: flex;
-    color: #ffffff;
-    width: 99px;
-    flex-direction: space-between;
-    margin-right: 8px;
-  }
-  .LogoutButton {
-    background-color: #6366f1;
-    border: 0px;
-    height: 24px;
-    width: 35px;
-    font-weight: 600;
-    color: #ffffff;
-    border-radius: 4px;
-    margin-right: 12px;
-    cursor: pointer;
-    margin-left: 13px;
-  }
-  .BgForHeader {
-    background-color: #272727;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-size: cover;
-  }
-  .HomeAndJobs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 110px;
-  }
-  .webSiteLogo {
-    height: 33px;
-    margin-left: 0px;
-  }
-  .HomeAndJobsStyle {
-    display: none;
-  }
-  .liWebSiteLogo {
-    list-style-type: none;
-    text-decoration: none;
-  }
-  .HJ {
-    text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .home-website-logo {
+    width: 155px;
   }
 }

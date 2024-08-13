@@ -1,14 +1,14 @@
 import {Switch, Route, Redirect} from 'react-router-dom'
-
-import ProtectedRoute from './components/ProtectedRoute'
 import Login from './components/Login'
 import Home from './components/Home'
 import Jobs from './components/Jobs'
+import ProtectedRoute from './components/ProtectedRoute'
 import NotFound from './components/NotFound'
 import JobItemDetails from './components/JobItemDetails'
 
 import './App.css'
 
+// Replace your code here
 const App = () => (
   <Switch>
     <Route exact path="/login" component={Login} />
